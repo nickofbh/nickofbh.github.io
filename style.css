@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+h1,h2 {
+  font-family: 'Lato', sans-serif;
+  font-style: normal
+  margin: 5px;
+  padding: 0;  
+}
+
+h1 {
+  font-size: 24px
+}
+
+h2 {
+  font-size: 16px
+}
+
+img {
+  max-width: 100%
+}
+
+.navbar {
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.navbar .socialicons {
+  margin: 5px;
+  font-size: 18px
+}
+
+.navbar .socialicons a {
+  text-decoration: none;
+  color: #000
+}
+
+.navbar .socialicons ul {
+  list-style-type: none;
+  padding: 0
+}
+
+.navbar .socialicons li {
+  display: inline;
+  margin: 0 10px 0;
+}
+
+.navbar .socialicons #google: hover {
+  color: #d34836;
+}
+
+.navbar .socialicons #twitter: hover {
+  color: #4099FF;
+}
+
+.navbar .socialicons #facebook: hover {
+  color: #3B5998;
+}
+.navbar .socialicons #linkedin: hover {
+  color: #4875B4;
+}
+.navbar .socialicons #github: hover {
+  color: rgba(0,0,0,0.3)
+}
+
+.pictures .picture {
+  align-items: center
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.pictures img {
+  border: 10px solid white;
+  transition: border 1s ease
+}
+
+.pictures img: hover {
+  border: 10px solid #021a40
+}
+
+.image-subtitle {
+  color: white;
+  left: 50%;
+  opacity: 0
+  position: absolute;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.image-subtitle h3 {
+  align-items: center;
+  display: flex;
+  font-weight: 200;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+  position: static
+  }
+}
