@@ -1,112 +1,100 @@
 html {
   height: 100%;
   width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
+  display: flex;
   height: 100%;
 }
 
-h1,h2 {
-  font-family: 'Lato', sans-serif;
-  font-style: normal
-  margin: 5px;
-  padding: 0;  
+h1, h2 {
+  font-style: normal;
+  font-weight: 400;
+  margin: 5px 5px 0px 0px;
 }
 
 h1 {
-  font-size: 24px
+  font-size: 28px
+  line-height: 32px;
+  padding-bottom: 32px;
 }
 
 h2 {
-  font-size: 16px
+  font-size: 18px;
+  line-height: 22px;
 }
 
 img {
+  max-height: 400px;
   max-width: 100%
 }
 
-.navbar {
-  height: 100%;
-  position: fixed;
+.container {
+  align-items: center;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   justify-content: center;
-  align-items: center
 }
 
-.navbar .socialicons {
+.socialicons {
+  font-size: 18px;
   margin: 5px;
-  font-size: 18px
 }
 
-.navbar .socialicons a {
+.socialicons a {
   text-decoration: none;
-  color: #000
+  color: #000;
 }
 
-.navbar .socialicons ul {
+.socialicons ul {
   list-style-type: none;
-  padding: 0
+  padding: 0;
 }
 
-.navbar .socialicons li {
+.socialicons li {
   display: inline;
   margin: 0 10px 0;
 }
 
-.navbar .socialicons #google: hover {
-  color: #d34836;
-}
-
-.navbar .socialicons #twitter: hover {
+.socialicons #twitter:hover {
   color: #4099FF;
 }
 
-.navbar .socialicons #facebook: hover {
+.socialicons #facebook:hover {
   color: #3B5998;
 }
-.navbar .socialicons #linkedin: hover {
+
+.socialicons #linkedin:hover {
   color: #4875B4;
 }
-.navbar .socialicons #github: hover {
-  color: rgba(0,0,0,0.3)
+
+.bio h2 a img {
+  height: 22px;
+  vertical-align: middle;
 }
 
-.pictures .picture {
-  align-items: center
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+.picture {
+  margin: 15px;
+  max-width: 50%;
 }
 
-.pictures img {
-  border: 10px solid white;
-  transition: border 1s ease
-}
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-.pictures img: hover {
-  border: 10px solid #021a40
-}
-
-.image-subtitle {
-  color: white;
-  left: 50%;
-  opacity: 0
-  position: absolute;
-  top: 50%; 
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.image-subtitle h3 {
-  align-items: center;
-  display: flex;
-  font-weight: 200;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 992px) {
-  .navbar {
-  position: static
+  .picture {
+    max-width: 80%;
   }
 }
