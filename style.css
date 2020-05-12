@@ -26,6 +26,12 @@ h2 {
   line-height: 22px;
 }
 
+.job-title {
+  align-items: center; 
+  display: flex;
+  margin-top: 4px;
+}
+
 img {
   max-height: 400px;
   max-width: 100%
