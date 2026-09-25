@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACL Fest 2026 — Weekend 2 Battle Plan</title>
+<style>
+  :root {
+    --bg: #0d0a1a;
+    --bg2: #161230;
+    --card: #1d1840;
+    --text: #f2eefc;
+    --muted: #a79fd0;
+    --accent: #ff5da2;
+    --accent2: #7c5cff;
+    --gold: #ffd166;
+    --green: #3ddc97;
+    --border: #2e2763;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 20% -5%, #2b1e5e 0%, var(--bg) 55%) fixed, var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    padding: 0 16px 80px;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  header.hero { text-align: center; padding: 64px 16px 32px; }
+  .kicker {
+    display: inline-block; font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); border: 1px solid var(--gold); border-radius: 999px;
+    padding: 6px 16px; margin-bottom: 20px;
+  }
+  h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; font-weight: 800; }
+  h1 .grad {
+    background: linear-gradient(90deg, var(--accent), var(--accent2), var(--gold));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub { color: var(--muted); margin-top: 12px; font-size: 1.05rem; }
+  .method {
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    padding: 20px 22px; margin: 28px 0;
+  }
+  .method h3 { font-size: 0.95rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .method p { color: var(--muted); font-size: 0.95rem; }
+  .method p strong { color: var(--text); }
+  h2.day {
+    font-size: 1.6rem; margin: 48px 0 4px; font-weight: 800;
+  }
+  .daydate { color: var(--muted); margin-bottom: 16px; font-size: 0.95rem; }
+  .slot {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 10px; display: flex; gap: 14px; align-items: flex-start;
+  }
+  .slot.must { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold) inset; }
+  .slot.rec { border-color: var(--accent2); }
+  .time { min-width: 108px; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--gold); font-size: 0.9rem; padding-top: 2px; }
+  .info { flex: 1; }
+  .artist { font-weight: 700; font-size: 1.05rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; }
+  .why { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+  .why strong { color: var(--text); }
+  .badge {
+    display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; border-radius: 999px; padding: 3px 10px; margin-left: 8px;
+    vertical-align: middle; white-space: nowrap;
+  }
+  .b-must { background: var(--gold); color: #221a05; }
+  .b-rec { background: var(--accent2); color: #fff; }
+  .b-disc { background: var(--green); color: #06251a; }
+  .b-excl { background: transparent; border: 1px solid var(--accent); color: var(--accent); }
+  .conflict {
+    border: 1px dashed var(--accent); border-radius: 12px; padding: 14px 16px;
+    margin: 14px 0; font-size: 0.92rem; color: var(--muted); background: rgba(255,93,162,0.06);
+  }
+  .conflict strong { color: var(--text); }
+  .picks { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0 8px; }
+  .pick {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px;
+  }
+  .pick .artist { font-size: 1rem; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.82rem; text-align: center; }
+  footer a { color: var(--accent); }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 8px; font-size: 0.82rem; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  @media (max-width: 560px) {
+    .time { min-width: 88px; font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Austin City Limits &bull; 25th Anniversary</div>
+    <h1>Weekend 2 <span class="grad">Battle Plan</span></h1>
+    <div class="sub">Oct 9&ndash;11, 2026 &middot; Zilker Park, Austin TX &middot; built from your Spotify history</div>
+  </header>
+
+  <div class="method">
+    <h3>How this was built</h3>
+    <p>Your <strong>All-Time Top Songs</strong> (121 tracks) and Spotify-generated mixes were matched against all 95 Weekend&nbsp;2 performances. Direct hits: <strong>The Chainsmokers</strong> (3 top tracks), <strong>Bleachers</strong>, <strong>Twenty One Pilots</strong>. Your Chill Mix and Daily Mix 3 are built around <strong>Parcels</strong> and <strong>Balu Brigada</strong> — both on the bill. Heavy EDM rotation (Calvin Harris, Ti&euml;sto, Galantis, Major Lazer) and 2010s pop/hip-hop (Drake, Maroon&nbsp;5, Chance the Rapper) shaped the rest. Set times below are as published; confirm in the official ACL app before you go.</p>
+  </div>
+
+  <div class="legend">
+    <span><span class="badge b-must">Must-see</span> top match for your taste</span>
+    <span><span class="badge b-rec">Recommended</span> strong fit</span>
+    <span><span class="badge b-disc">Discovery</span> new, worth a look</span>
+    <span><span class="badge b-excl">W2 only</span> Weekend 2 exclusive</span>
+  </div>
+
+  <!-- ================= FRIDAY ================= -->
+  <h2 class="day">Friday, October 9</h2>
+  <div class="daydate">Gates at noon &middot; music ends ~10 PM</div>
+
+  <div class="slot"><div class="time">12:45&ndash;1:30</div><div class="info"><span class="artist">Almost Heaven</span> <span class="badge b-excl">W2 only</span><div class="meta">Tito's &middot; Austin local opener</div><div class="why">Easy warm-up set if you're in early.</div></div></div>
+
+  <div class="slot"><div class="time">2:00&ndash;2:45</div><div class="info"><span class="artist">S.G. Goodman</span> <span class="badge b-excl">W2 only</span><div class="meta">BeatBox</div><div class="why">Alt-country grit. Your Oasis Radio streak (Green Day, Radiohead, Blur) says give this a shot. <strong>Alternative:</strong> Dallas Wax, Snapchat.</div></div></div>
+
+  <div class="slot"><div class="time">3:30&ndash;4:30</div><div class="info"><span class="artist">LP</span><div class="meta">Snapchat</div><div class="why">Big-voiced pop — fits your Maroon&nbsp;5 / Andy Grammer lane.</div></div></div>
+
+  <div class="slot rec"><div class="time">4:30&ndash;5:30</div><div class="info"><span class="artist">Natasha Bedingfield</span> <span class="badge b-rec">Recommended</span> <span class="badge b-excl">W2 only</span><div class="meta">Tito's</div><div class="why">"Unwritten" live, W2-exclusive, pure 2000s-pop nostalgia for a 2010s-pop guy. <strong>Alt:</strong> Amyl and the Sniffers (AmEx) if you want chaos instead.</div></div></div>
+
+  <div class="slot"><div class="time">5:15&ndash;6:15</div><div class="info"><span class="artist">Paris Paloma</span><div class="meta">Miller Lite</div><div class="why">Breakthrough indie-folk voice; a palate cleanser before the evening run.</div></div></div>
+
+  <div class="slot rec"><div class="time">6:30&ndash;7:30</div><div class="info"><span class="artist">Steve Aoki</span> <span class="badge b-rec">Recommended</span><div class="meta">Tito's</div><div class="why">Your top-tracks EDM shelf (Calvin Harris, Ti&euml;sto, Galantis) demands a big-tent dance set. <strong>Alt:</strong> Labrinth (AmEx) for hip-hop/R&amp;B-leaning pop.</div></div></div>
+
+  <div class="slot must"><div class="time">7:30&ndash;8:30</div><div class="info"><span class="artist">The Chainsmokers</span> <span class="badge b-must">Must-see</span><div class="meta">Snapchat</div><div class="why"><strong>Your #1 lineup match</strong> — "Closer", "Something Just Like This" and "Don't Let Me Down" are all in your all-time top tracks. Non-negotiable.</div></div></div>
+
+  <div class="conflict"><strong>Headliner conflict:</strong> Chainsmokers end at 8:30. <strong>Charli xcx</strong> starts 8:40 on American Express (Brat-summer victory lap, huge pop moment) vs <strong>Kings of Leon</strong> at 8:15 on T-Mobile (W2-exclusive). For your taste: walk to Charli.</div>
+
+  <div class="slot must"><div class="time">8:40&ndash;close</div><div class="info"><span class="artist">Charli xcx</span> <span class="badge b-must">Must-see</span><div class="meta">American Express &middot; headliner</div><div class="why">The defining pop show of the weekend. Your 2010s-pop DNA (Maroon&nbsp;5, Bieber, WALK THE MOON) will feel at home.</div></div></div>
+
+  <!-- ================= SATURDAY ================= -->
+  <h2 class="day">Saturday, October 10</h2>
+  <div class="daydate">The indie-pop day &middot; music ends ~9 PM</div>
+
+  <div class="slot"><div class="time">1:00&ndash;1:45</div><div class="info"><span class="artist">Night Tapes</span><div class="meta">T-Mobile</div><div class="why">Dreamy indie opener, low commitment.</div></div></div>
+
+  <div class="slot must"><div class="time">2:30&ndash;3:15</div><div class="info"><span class="artist">Balu Brigada</span> <span class="badge b-must">Must-see</span><div class="meta">T-Mobile</div><div class="why">Spotify literally builds your <strong>Chill Mix and Daily Mix 3</strong> around them (with Parcels and Glass Animals). Seeing the algorithm's pick live is the whole point of this exercise.</div></div></div>
+
+  <div class="slot"><div class="time">3:30&ndash;4:30</div><div class="info"><span class="artist">Arcy Drive</span><div class="meta">BeatBox</div><div class="why">Guitar-driven indie to bridge the afternoon. <strong>Alt:</strong> Skye Newman (Snapchat).</div></div></div>
+
+  <div class="slot rec"><div class="time">4:30&ndash;5:30</div><div class="info"><span class="artist">Young Miko</span> <span class="badge b-rec">Recommended</span><div class="meta">American Express</div><div class="why">Latin trap energy for your Drake / Wizkid / Chance the Rapper shelf.</div></div></div>
+
+  <div class="slot"><div class="time">5:30&ndash;6:30</div><div class="info"><span class="artist">It's Murph</span> <span class="badge b-disc">Discovery</span><div class="meta">Snapchat</div><div class="why">House-leaning dance set — scratch the Robin Schulz / Matoma itch. <strong>Alt:</strong> Snow Strippers (5:15 Miller Lite) for darker electronic.</div></div></div>
+
+  <div class="slot rec"><div class="time">6:30&ndash;7:30</div><div class="info"><span class="artist">Lola Young</span> <span class="badge b-rec">Recommended</span><div class="meta">American Express</div><div class="why">The breakout voice of the year ("Messy"). Park at AmEx early and hold your spot for the closer.</div></div></div>
+
+  <div class="conflict"><strong>Headliner conflict:</strong> <strong>R&Uuml;F&Uuml;S DU SOL</strong> (AmEx, 8:30) vs <strong>Lorde</strong> (T-Mobile, 8:15). Your EDM core (Calvin Harris, Ti&euml;sto, Major Lazer) says R&Uuml;F&Uuml;S; your indie-pop side (Lorde-adjacent: Phoenix, Miike Snow, Foster The People) says Lorde. Coin-flip — R&Uuml;F&Uuml;S gets the nod since you're already at AmEx.</div>
+
+  <div class="slot must"><div class="time">8:30&ndash;close</div><div class="info"><span class="artist">R&Uuml;F&Uuml;S DU SOL</span> <span class="badge b-must">Must-see</span><div class="meta">American Express &middot; headliner</div><div class="why">The electronic headline set built for exactly your listening profile. Stay at AmEx after Lola Young.</div></div></div>
+
+  <!-- ================= SUNDAY ================= -->
+  <h2 class="day">Sunday, October 11</h2>
+  <div class="daydate">The big decisions day &middot; music ends ~9 PM</div>
+
+  <div class="slot"><div class="time">1:15&ndash;2:00</div><div class="info"><span class="artist">Rum Jungle</span><div class="meta">American Express</div><div class="why">Aussie indie-rock to ease in. <strong>Alt:</strong> Thomas Day (T-Mobile).</div></div></div>
+
+  <div class="slot"><div class="time">2:45&ndash;3:30</div><div class="info"><span class="artist">Charlotte Lawrence</span> <span class="badge b-excl">W2 only</span><div class="meta">T-Mobile</div><div class="why">W2-exclusive alt-pop; fits the Suki Waterhouse / Gracie-adjacent lane.</div></div></div>
+
+  <div class="slot"><div class="time">3:30&ndash;4:30</div><div class="info"><span class="artist">Grace Ives</span><div class="meta">Snapchat</div><div class="why">Off-kilter synth-pop discovery pick. <strong>Alt:</strong> Claire Rosinkranz (Miller Lite).</div></div></div>
+
+  <div class="slot"><div class="time">4:30&ndash;5:30</div><div class="info"><span class="artist">Max McNown</span><div class="meta">American Express</div><div class="why">Singer-songwriter breather; your Ed Sheeran / Andy Grammer plays suggest you'll like him.</div></div></div>
+
+  <div class="slot"><div class="time">5:30&ndash;6:30</div><div class="info"><span class="artist">Houndmouth</span> <span class="badge b-excl">W2 only</span><div class="meta">Snapchat</div><div class="why">W2-exclusive folk-rock, golden-hour slot. <strong>Alt:</strong> Saint Motel (Miller Lite) for indie-pop.</div></div></div>
+
+  <div class="slot rec"><div class="time">6:30&ndash;7:30</div><div class="info"><span class="artist">SOFI TUKKER</span> <span class="badge b-rec">Recommended</span><div class="meta">American Express</div><div class="why">Dance-pop explosion — the Major Lazer / Galantis fan's happy place. <strong>Alt:</strong> Geese (T-Mobile) for the indie-rock counter-programming.</div></div></div>
+
+  <div class="slot must"><div class="time">7:30&ndash;8:30</div><div class="info"><span class="artist">Parcels</span> <span class="badge b-must">Must-see</span><div class="meta">Miller Lite</div><div class="why">Your <strong>Chill Mix is literally described as "Parcels</strong>, Royel Otis, Balu Brigada and more". Daft Punk-adjacent disco-funk, and the perfect runway into the finale.</div></div></div>
+
+  <div class="conflict"><strong>Headliner conflict (the hardest call):</strong> <strong>Twenty One Pilots</strong> (AmEx, 8:30 — "Stressed Out" is in your all-time top tracks) vs <strong>The xx</strong> (T-Mobile, 8:30 — the indie connoisseur's pick, right in your Phoenix / Miike Snow / Coldplay lane). Parcels ends at 8:30 on Miller Lite; AmEx is the shorter walk. The data says Twenty One Pilots — barely.</div>
+
+  <div class="slot must"><div class="time">8:30&ndash;close</div><div class="info"><span class="artist">Twenty One Pilots</span> <span class="badge b-must">Must-see</span><div class="meta">American Express &middot; headliner</div><div class="why">In your all-time top tracks, and a legendary festival-closing show. End the weekend here.</div></div></div>
+
+  <!-- ================= DISCOVERY ================= -->
+  <h2 class="day">Discovery picks</h2>
+  <div class="daydate">Artists with zero history in your library who fit your taste profile</div>
+  <div class="picks">
+    <div class="pick"><span class="artist">Fcukers</span> <span class="badge b-disc">Discovery</span><div class="meta">Sun 6:30&ndash;7:30 &middot; Tito's</div><div class="why">Dance-punk chaos for the Major Lazer / Miike Snow overlap.</div></div>
+    <div class="pick"><span class="artist">Snow Strippers</span> <span class="badge b-disc">Discovery</span><div class="meta">Sat 5:15&ndash;6:15 &middot; Miller Lite</div><div class="why">Dark electro-pop duo; your Salem-adjacent curiosity meets EDM.</div></div>
+    <div class="pick"><span class="artist">Levity</span> <span class="badge b-disc">Discovery</span><div class="meta">Sat 7:15&ndash;8:15 &middot; Miller Lite</div><div class="why">Bass-music trio — the heaviest electronic set of the weekend.</div></div>
+    <div class="pick"><span class="artist">Blood Orange</span> <span class="badge b-disc">Discovery</span><div class="meta">Sun 7:30&ndash;8:30 &middot; BeatBox</div><div class="why">Dev Hynes' silky R&amp;B/art-pop; your sultry-R&amp;B streak (bedroom playlist approved) will approve. Conflicts with Parcels — your call.</div></div>
+    <div class="pick"><span class="artist">Geese</span> <span class="badge b-disc">Discovery</span><div class="meta">Sun 6:30&ndash;7:30 &middot; T-Mobile</div><div class="why">The guitar band of the moment; for the Coldplay-to-Turnstile pipeline.</div></div>
+    <div class="pick"><span class="artist">Leon Thomas</span> <span class="badge b-disc">Discovery</span><div class="meta">Fri 7:15&ndash;8:15 &middot; Miller Lite</div><div class="why">Grammy-winning R&amp;B — but it conflicts with Chainsmokers. Only if you bail early.</div></div>
+  </div>
+
+  <footer>
+    Set times: ACL 2026 Weekend 2 schedule as published (cross-verified across two independent sources, Sep 2026). Times are Austin local (CT) and can change — confirm in the official ACL app day-of.<br>
+    Taste data: your Spotify All-Time Top Songs (121 tracks) + Spotify-generated mix profiles. Built Sep 25, 2026.
+  </footer>
+
+</div>
+</body>
+</html>
